@@ -16,6 +16,7 @@ public class Principal {
         //creemos coches!!!
         Coche coche1 = new Coche();
         Coche coche2 = new Coche();
+        Coche coche3 = new Coche("1234HSH", "BASTIDOR");
         
         //coche1.arrancar();
         //coche1.acelerar();
@@ -33,7 +34,7 @@ public class Principal {
         
         System.out.println(coche2.modelo);
         
-        Coche coche3 = new Coche();
+        //Coche coche3 = new Coche();
         System.out.println(coche3.modelo);
         
         coche3.modelo = "Aygo";

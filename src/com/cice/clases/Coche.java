@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Formador
  */
-public class Coche {
+class Coche {
     
     //atributos o variables
     //caracteristicas
@@ -24,16 +24,25 @@ public class Coche {
     Date fecha;
     boolean esAndando;
     boolean esEncendido;
+    char caracter;
     
-    //constructora OHL
+    //constructor
     Coche(){
-
+        color = "ROJO";
+    }
+    
+    //constructor con parametros
+    Coche(String matricula, String bastidor){
+        //inicializa las variables designadas
+        this.matricula = matricula;
+        this.bastidor = bastidor;
     }
     
     
     //funciones
-    void acelerar(){
+    void acelerar(String color){
         System.out.println("Estoy acelerando");
+        System.out.println("valor de caracter por defecto: " + caracter);
     }
     
     void frenar(){
